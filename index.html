@@ -1,154 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
-    <title>Currículo - Sergio Augusto Nunes Carnevali</title> <!-- Título da página -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
-    <style>
-        @media print {
-            body {
-                -webkit-print-color-adjust: exact; /* Garante que as cores sejam impressas corretamente */
-            }
-            @page {
-                margin: 0; /* Remove margens da página para uma impressão mais limpa */
-            }
-            footer {
-                display: none; /* Oculta o rodapé na impressão para não mostrar a localização do arquivo */
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Sergio Augusto Nunes Carnevali</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container"> <!-- Contêiner principal para o currículo -->
-        <aside class="left-side"> <!-- Seção lateral esquerda para informações pessoais -->
-            <img src="sergio_carnevali.jpg" alt="Foto de Sergio Augusto Nunes Carnevali"> <!-- Imagem do usuário -->
-            <section class="contact"> <!-- Seção de contato -->
-                <h2>Contato</h2> <!-- Título da seção -->
-                <p>Santos - 11025-130</p> <!-- Endereço -->
-                <p>(13) 98809.1008</p> <!-- Telefone -->
-                <p>gutocarnevali@gmail.com</p> <!-- E-mail -->
-                <p>Brasileiro</p> <!-- Nacionalidade -->
-                <p>Casado</p><br> <!-- Estado civil -->
-                <a href="https://www.linkedin.com/in/sergio-carnevali-68268" target="_blank">LinkedIn</a> <!-- Link para o LinkedIn -->
+    <div class="container">
+        <aside class="left-side">
+            <img src="sergio_carnevali.jpg" alt="Foto de Sergio Augusto Nunes Carnevali" class="profile-pic">
+            <section class="contact">
+                <h2>Contato</h2>
+                <p>Santos - 11025-130</p>
+                <p>(13) 98809.1008</p>
+                <p>gutocarnevali@gmail.com</p>
+                <p>Brasileiro | Casado</p>
+                <a href="https://www.linkedin.com/in/sergio-carnevali-68268" target="_blank">LinkedIn</a>
             </section>
-            <section class="skills"> <!-- Seção de habilidades -->
-                <h2>Habilidades e Competências</h2> <!-- Título da seção -->
-                <ul> <!-- Lista de habilidades -->
-                    <li>Proatividade no cumprimento de metas e objetivos</li><br>
-                    <li>Excelente relacionamento interpessoal com os colegas</li><br>
-                    <li>Comunicação clara e eficaz com clientes</li><br>
-                    <li>Pontualidade no cumprimento de prazos</li><br>
-                    <li>Comprometimento com a padronização dos processos</li><br>
-                    <li>Cordialidade no atendimento ao cliente</li><br>
-                    <li>Capacidade para gerir conflitos</li><br>
-                    <li>Comunicação eficaz com colegas e stakeholders</li><br>
-                    <li>Resiliência para enfrentar desafios e obstáculos</li><br>
-                </ul>
+            <section class="skills">
+                <h2>Habilidades</h2>
+                <div class="skills-tags">
+                    <span>Proatividade</span>
+                    <span>Relacionamento</span>
+                    <span>Comunicação</span>
+                    <span>Pontualidade</span>
+                    <span>Padronização</span>
+                    <span>Cordialidade</span>
+                    <span>Gestão de Conflitos</span>
+                    <span>Resiliência</span>
+                </div>
             </section>
-            <section class="languages"> <!-- Seção de idiomas -->
-                <h2>Idiomas</h2> <!-- Título da seção -->
-                <p>Português: Língua materna</p> <!-- Idioma nativo -->
-                <p>Inglês: Intermediário</p> <!-- Nível de inglês -->
-                <p>Espanhol: Intermediário</p> <!-- Nível de espanhol -->
+            <section class="languages">
+                <h2>Idiomas</h2>
+                <p><strong>Português:</strong> Nativo</p>
+                <p><strong>Inglês:</strong> Intermediário</p>
+                <p><strong>Espanhol:</strong> Intermediário</p>
             </section>
         </aside>
-        <main class="right-side"> <!-- Seção principal para o conteúdo do currículo -->
-            <section class="summary"> <!-- Seção de resumo -->
-                <h2>Objetivo</h2> <!-- Título da seção -->
-                <p>Atuar como profissional na área de administração de servidores/sistemas e infraestrutura. Suporte técnico de segundo e terceiro níveis ou coordenação de equipes de suporte a usuários. Mais de 30 anos de experiência na área. Perfil dinâmico e proativo, com disposição para o trabalho em equipe e o aprendizado constante, contribuindo para o alcance das metas.</p> <!-- Descrição do perfil profissional -->
-            </section>
-            <section class="experience"> <!-- Seção de experiência profissional -->
-                <h2>Experiência Profissional</h2> <!-- Título da seção -->
-                <article> <!-- Artigo para uma experiência específica -->
-                    <h3>Analista Sup Automação Pleno - SPASSU TECNOLOGIA E SERVIÇOS S/A <span>03/2024 - Atual</span></h3> <!-- Cargo e data -->
-                    <ul> <!-- Lista de responsabilidades -->
-                        <li>Atuação em otimização de processos e na implementação de soluções automatizadas</li>
-                        <li>Auxiliar na resolução de problemas e troubleshooting de sistemas automatizados e rede</li>
-                        <li>Realizar manutenções preventivas e corretivas em equipamentos e softwares</li>
-                        <li>Tratar de alguns problemas simples de PIMS</li>
-                        <li>Atuação na configuração de SO dos diversos tipos de Windows Server e Linux no VMware vSphere</li>
-                    </ul>
-                </article>
-                <article> <!-- Outro artigo para uma experiência diferente -->
-                    <h3>Trabalho voluntário socioeducativo - Trabalho Voluntario - Vale do Javari <span>02/2018 - 05/2022</span></h3> <!-- Cargo e data -->
-                    <ul> <!-- Lista de responsabilidades -->
-                        <li>Trabalho voluntário socioeducativo na região ao vale do Javari, Amazonas</li>
-                        <li>Participei também em trabalho inclusivo realizado com surdos e indígenas da cidade Benjamim Constant-AM</li>
-                    </ul>
-                </article>
+
+        <main class="right-side">
+            <header>
+                <h1>Sergio Augusto Nunes Carnevali</h1>
+                <p class="objective">Atuar na administração de servidores, sistemas e infraestrutura, oferecendo suporte técnico de alto nível ou liderança. Com mais de 30 anos de experiência, trago um perfil proativo e dinâmico, focado em resultados e aprendizado contínuo.</p>
+            </header>
+
+            <section class="experience">
+                <h2>Experiência Profissional</h2>
                 <article>
-                    <h3>Analista de Suporte Pleno - COSAN S/A / Raízen S/A <span>10/2008 - 01/2018</span></h3> <!-- Cargo e data -->
-                    <ul> <!-- Lista de responsabilidades -->
-                        <li>Atendimento a usuários Windows e Sistemas Informatizados</li>
-                        <li>Controle de Backups ArcServe</li>
-                        <li>Administração de Rede Windows Server</li>
-                        <li>Instalações e diagnóstico em cabeamento estruturado com par metálico e cabo óptico</li>
-                        <li>Instalação e Administração de Redes Wireless</li>
-                        <li>Configuração e manutenção de PDA's Symbol Pocket PC Windows Mobile, Monitoramento de links de conexão junto as operadoras Telefônica e Embratel e através de sistema informatizado,</li>
-                        <li>Adequação de projetos de Tl para atender a SOX</li>
-                        <li>Acompanhamento de chamados técnicos através de sistema informatizado, Desenvolvimento de projetos na área de Tl e automação</li>
-                        <li>Responsável por garantir funcionamento perfeito das máquinas e dos sistemas automatizados, monitorando indicadores, ajustando parâmetros e realizando intervenções para otimizar a produção tanto da descarga a granel, como sistemas de pesagem dos caminhões</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Técnico Júnior - Itautec Philco S/A <span>04/2001 - 08/2006</span></h3> <!-- Cargo e data -->
-                    <ul> <!-- Lista de responsabilidades -->
-                        <li>Atuação nas áreas de Automação Bancária, Infraestrutura, Telecomunicações, Informática e Redes de Dados</li>
-                        <li>Manutenção de módulos pagadores (Itautec, Perto, De Larue, NMD, TCR) e roteadores Cisco</li>
-                        <li>Administração de servidores GNU/Linux base Debian</li>
-                        <li>Instrutor da área de treinamento da empresa</li>
-                        <li>Automação bancária envolve implementação e atendimentos aos módulos de pagamento (caixa eletrônicos) com conhecimentos mecânico e sensores, configuração do sistema de automação para captura dos dados e funcionamento dos mecanismos de pagamentos, impressão e deposito e transações</li>
-                    </ul>
-                </article>
-            </section>
-            <section class="education"> <!-- Seção de formação acadêmica -->
-                <h2>Formação Acadêmica</h2> <!-- Título da seção -->
-                <article>
-                    <h3>Tecnologo: Análise e Desenvolvimento de Sistema - Universidade Cruzeiro do Sul <span>02/2025 – 12/2026</span></h3> <!-- Curso e data -->
+                    <h3>Analista Sup Automação Pleno - SPASSU TECNOLOGIA <span>03/2024 - Atual</span></h3>
                     <ul>
-                        <li>Status - Cursando</li> <!-- Status do curso -->
+                        <li>Otimização de processos e automação.</li>
+                        <li>Troubleshooting de sistemas e redes.</li>
+                        <li>Manutenção preventiva e corretiva (Equipamentos/Softwares).</li>
+                        <li>Configuração Windows Server/Linux no VMware vSphere.</li>
                     </ul>
                 </article>
                 <article>
-                    <h3>Ensino Médio Profissionalizante completo: Técnico em Informática Industrial - Escola Técnica Federal de São Paulo <span>12/1998</span></h3> <!-- Curso e data -->
+                    <h3>Trabalho voluntário socioeducativo - Vale do Javari <span>02/2018 - 05/2022</span></h3>
+                    <ul>
+                        <li>Atuação socioeducativa na região do Vale do Javari, Amazonas.</li>
+                        <li>Inclusão de surdos e indígenas em Benjamim Constant-AM.</li>
+                    </ul>
                 </article>
                 <article>
-                    <h3>Redes e Protocolos de Comunicação, Servidores e Tecnologias RAID, Instalação e Configuração de Roteadores Cisco, Implantação de Sistemas de Telefonia - Grupo Educacional Itautec Philco S/A</h3> <!-- Cursos adicionais -->
+                    <h3>Analista de Suporte Pleno - COSAN / Raízen <span>10/2008 - 01/2018</span></h3>
+                    <ul>
+                        <li>Administração Windows Server, Redes e Backups (ArcServe).</li>
+                        <li>Gestão de infraestrutura: Cabeamento, Wireless, monitoramento de links.</li>
+                        <li>Adequação de projetos de TI para atender a SOX.</li>
+                        <li>Otimização de sistemas de pesagem e descarga automatizada.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Técnico Júnior - Itautec Philco S/A <span>04/2001 - 08/2006</span></h3>
+                    <ul>
+                        <li>Atuação em Automação Bancária, Infraestrutura e Redes.</li>
+                        <li>Manutenção de hardware bancário e roteadores Cisco.</li>
+                        <li>Administração de servidores Linux (Debian).</li>
+                    </ul>
                 </article>
             </section>
-            <section class="courses"> <!-- Seção de cursos complementares -->
-                <h2>Cursos Complementares</h2> <!-- Título da seção -->
-                <ul> <!-- Lista de cursos -->
-                    <li>CCNAv7: Introdução às redes - Cisco Networking Academy</li>
-                    <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
-                    <li>Cybersecurity Essentials - Cisco Networking Academy</li>
-                    <li>Cloud Treinamento - Cloud Computer nas Ferramentas AWS</li>
-                    <li>VMWare vSphere ESXi and vCenter Administration</li>
-                    <li>Cursando Programação - Linguagem Python foco em Ciência de Dados</li>
-                    <li>Curso de Oratória</li>
-                    <li>Conhecimento Avançado em Excel</li>
-                    <li>Conhecimento intermediario em Linux</li>
-                </ul>
+
+            <section class="education">
+                <h2>Formação</h2>
+                <article>
+                    <p><strong>Análise e Desenvolvimento de Sistemas</strong> - Cruzeiro do Sul (Cursando 2025-2026)</p>
+                    <p><strong>Técnico em Informática Industrial</strong> - ETFSP (1998)</p>
+                </article>
             </section>
-            <section class="certifications"> <!-- Seção de certificações -->
-                <h2>Certificações</h2> <!-- Título da seção -->
-                <ul> <!-- Lista de certificações -->
-                    <li>Certificação Microsoft Azure - Az900</li>
-                    <li>AVEVA - PI System Administration: Basics</li>
-                <h3>Certificados Segurança Plataforma Petróleo</h3> <!-- Título da seção -->
-                    <li>CBSP - Curso Básico de Segurança em Plataforma</li>
-                    <li>THUET – Treinamento em Escape de Helicópteros Submersos em Águas Tropicais</li>
+
+            <section class="courses">
+                <h2>Cursos e Certificações</h2>
+                <ul>
+                    <li><strong>Certificações:</strong> Microsoft Azure Az900, AVEVA PI System Administration, CBSP/THUET.</li>
+                    <li><strong>Tecnologias:</strong> CCNAv7 (Cisco), Cybersecurity, AWS, VMWare vSphere, Python (Ciência de Dados), Linux.</li>
                 </ul>
             </section>
         </main>
-        <footer> <!-- Rodapé da página -->
-            <button onclick="window.print()">Imprimir Currículo</button> <!-- Botão para imprimir o currículo -->
-        </footer>
     </div>
+    <footer class="print-footer">
+        <button onclick="window.print()">Imprimir Currículo</button>
+    </footer>
 </body>
 </html>
-
-
-
-

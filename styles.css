@@ -1,149 +1,163 @@
-/* Estilo geral do corpo da página */
+:root {
+    --primary: #2a9d8f;
+    --secondary: #264653;
+    --bg-main: #f4f4f9;
+    --bg-card: #ffffff;
+    --text-main: #2d3748;
+    --text-muted: #4a5568; /* Contraste ajustado */
+    --accent-light: #e2e8f0;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
     margin: 0;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  /* Estilo do contêiner principal */
-  .container {
-    display: flex;
-    /* max-width: 950px;  Removido para o contêiner ocupar a largura total em telas menores */
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Tornando o contêiner responsivo */
-    flex-direction: column; /* Empilha as seções em telas menores */
-    width: 95%; /* Use porcentagem para ocupar a largura da tela, com margem */
-    max-width: 950px; /* Define uma largura máxima para telas maiores */
-  }
-  
-  /* Estilo da seção lateral esquerda */
-  aside.left-side {
-    /* width: 750px; Removido para ocupar a largura total em telas menores */
-    background-color: #2a9d8f;
-    color: #fff;
-    padding: 20px;
-    width: 100%; /* Ocupa a largura total em telas menores */
-    box-sizing: border-box; /* Garante que o padding não aumente a largura */
-  }
-  
-  /* Estilo para a classe de habilidades */
-  .skills {
-    font-size: medium;
-  }
-  
-  /* Estilo do título da seção de habilidades */
-  aside.left-side h2 {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-  }
-  
-  /* Estilo das imagens na seção lateral */
-  aside.left-side img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    max-width: 100%; /* Impede que a imagem exceda o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-  
-  /* Estilo dos parágrafos e links na seção de contato */
-  aside.left-side .contact p,
-  aside.left-side .contact a {
-    color: #fff;
-    display: block;
-    margin-bottom: 5px;
-    text-decoration: none;
-  }
-  
-  /* Estilo da lista de habilidades */
-  aside.left-side .skills ul {
-    list-style: none;
     padding: 0;
-  }
-  
-  /* Estilo dos itens da lista de habilidades */
-  aside.left-side .skills li {
-    margin-bottom: 5px;
-    word-break: break-word;
-    list-style-type: disc;
-  }
-  
-  /* Estilo da seção principal à direita */
-  main.right-side {
-    padding: 20px;
-    width: 100%; /* Ocupa a largura total em telas menores */
-    box-sizing: border-box; /* Garante que o padding não aumente a largura */
-  }
-  
-  /* Estilo do título das seções na parte direita */
-  main.right-side h2 {
-    color: #2a9d8f;
-    border-bottom: 2px solid #2a9d8f;
+}
+
+.container {
+    max-width: 950px;
+    margin: 20px auto;
+    background-color: var(--bg-card);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-side {
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 3px solid var(--primary);
+    object-fit: cover;
+}
+
+.left-side h2 {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
     padding-bottom: 5px;
     margin-bottom: 15px;
-  }
-  
-  /* Estilo dos artigos de experiência e educação */
-  main.right-side .experience article,
-  main.right-side .education article {
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo dos títulos das experiências e educação */
-  main.right-side .experience h3,
-  main.right-side .education h3 {
-    color: #264653;
-    margin-bottom: 5px;
-  }
-  
-  /* Estilo das listas de experiência e cursos */
-  main.right-side .experience ul,
-  main.right-side .courses ul,
-  main.right-side .certifications ul {
-    list-style: disc;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.left-side p, .left-side a {
+    color: #edf2f7;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills-tags span {
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.right-side {
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header h1 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.objective {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.experience article, .education article {
+    margin-bottom: 25px;
+}
+
+.right-side h2 {
+    color: var(--secondary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.right-side h3 {
+    margin: 0 0 5px 0;
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+.right-side h3 span {
+    float: right;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+ul {
     padding-left: 20px;
-  }
-  
-  /* Estilo dos itens da lista de experiência e educação */
-  main.right-side .experience li,
-  main.right-side .education li {
+    margin: 5px 0;
+}
+
+li {
     margin-bottom: 5px;
-  }
-  
-  /* Media Query para telas menores (smartphones) */
-  @media (min-width: 768px) {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.print-footer {
+    text-align: center;
+    padding: 20px;
+    background: #e2e8f0;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
     .container {
-      flex-direction: row; /* Volta ao layout original em telas maiores */
+        flex-direction: row;
     }
-  
-    aside.left-side {
-      width: 30%; /* Ajusta a largura da seção lateral em telas maiores */
+    .left-side {
+        width: 30%;
     }
-  
-    main.right-side {
-      width: 70%; /* Ajusta a largura da seção principal em telas maiores */
+    .right-side {
+        width: 70%;
     }
-  }
-  
-  /* Media Query para telas médias (tablets) - Opcional, para ajustes finos */
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-      .container {
-          max-width: 768px;
-      }
-  }
-  
-  
-  /* Media Query para telas grandes (desktops) - Opcional, para ajustes finos */
-  
-  @media (min-width: 992px) {
-      .container {
-          max-width: 950px;  // Retorna ao valor original, se desejado
-      }
-  }
-  
+}
+
+@media print {
+    body { background: white; }
+    .container { box-shadow: none; width: 100%; }
+    .print-footer { display: none; }
+}
