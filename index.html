@@ -5,102 +5,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Sergio Augusto Nunes Carnevali</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Inter (corpo) + Playfair Display (títulos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" crossorigin="anonymous"></script>
+    <style>
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+            @page {
+                margin: 0;
+            }
+            .print-hide {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <aside class="left-side">
-            <img src="sergio_carnevali.jpg" alt="Foto de Sergio Augusto Nunes Carnevali" class="profile-pic">
-            <section class="contact">
-                <h2>Contato</h2>
-                <p>Santos - 11025-130</p>
-                <p>(13) 98809.1008</p>
-                <p>gutocarnevali@gmail.com</p>
-                <p>Brasileiro | Casado</p>
-                <a href="https://www.linkedin.com/in/sergio-carnevali-68268" target="_blank">LinkedIn</a>
-            </section>
-            <section class="skills">
-                <h2>Habilidades</h2>
-                <div class="skills-tags">
-                    <span>Proatividade</span>
-                    <span>Relacionamento</span>
-                    <span>Comunicação</span>
-                    <span>Pontualidade</span>
-                    <span>Padronização</span>
-                    <span>Cordialidade</span>
-                    <span>Gestão de Conflitos</span>
-                    <span>Resiliência</span>
+    <div class="wrapper">
+        <!-- Header: Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <img src="sergio_carnevali.jpg" alt="Foto profissional de Sergio Augusto Nunes Carnevali" class="hero-photo">
+                <div class="hero-text">
+                    <h1>Sergio Augusto Nunes Carnevali</h1>
+                    <p class="tagline">Administrador de Sistemas & Infraestrutura</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="grid-container">
+            <!-- Card 1: Contact Info -->
+            <section class="card contact-card">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Contato
+                </h2>
+                <div class="contact-list">
+                    <p><strong>Localização:</strong> Santos - 11025-130</p>
+                    <p><strong>Telefone:</strong> (13) 98809.1008</p>
+                    <p><strong>E-mail:</strong> gutocarnevali@gmail.com</p>
+                    <p><strong>Nacionalidade:</strong> Brasileiro</p>
+                    <p><strong>Estado Civil:</strong> Casado</p>
+                    <a href="https://www.linkedin.com/in/sergio-carnevali-68268" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
                 </div>
             </section>
-            <section class="languages">
-                <h2>Idiomas</h2>
-                <p><strong>Português:</strong> Nativo</p>
-                <p><strong>Inglês:</strong> Intermediário</p>
-                <p><strong>Espanhol:</strong> Intermediário</p>
-            </section>
-        </aside>
 
-        <main class="right-side">
-            <header>
-                <h1>Sergio Augusto Nunes Carnevali</h1>
-                <p class="objective">Atuar na administração de servidores, sistemas e infraestrutura, oferecendo suporte técnico de alto nível ou liderança. Com mais de 30 anos de experiência, trago um perfil proativo e dinâmico, focado em resultados e aprendizado contínuo.</p>
-            </header>
-
-            <section class="experience">
-                <h2>Experiência Profissional</h2>
-                <article>
-                    <h3>Analista Sup Automação Pleno - SPASSU TECNOLOGIA <span>03/2024 - Atual</span></h3>
-                    <ul>
-                        <li>Otimização de processos e automação.</li>
-                        <li>Troubleshooting de sistemas e redes.</li>
-                        <li>Manutenção preventiva e corretiva (Equipamentos/Softwares).</li>
-                        <li>Configuração Windows Server/Linux no VMware vSphere.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Trabalho voluntário socioeducativo - Vale do Javari <span>02/2018 - 05/2022</span></h3>
-                    <ul>
-                        <li>Atuação socioeducativa na região do Vale do Javari, Amazonas.</li>
-                        <li>Inclusão de surdos e indígenas em Benjamim Constant-AM.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Analista de Suporte Pleno - COSAN / Raízen <span>10/2008 - 01/2018</span></h3>
-                    <ul>
-                        <li>Administração Windows Server, Redes e Backups (ArcServe).</li>
-                        <li>Gestão de infraestrutura: Cabeamento, Wireless, monitoramento de links.</li>
-                        <li>Adequação de projetos de TI para atender a SOX.</li>
-                        <li>Otimização de sistemas de pesagem e descarga automatizada.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Técnico Júnior - Itautec Philco S/A <span>04/2001 - 08/2006</span></h3>
-                    <ul>
-                        <li>Atuação em Automação Bancária, Infraestrutura e Redes.</li>
-                        <li>Manutenção de hardware bancário e roteadores Cisco.</li>
-                        <li>Administração de servidores Linux (Debian).</li>
-                    </ul>
-                </article>
+            <!-- Card 2: Objetivo/Resumo -->
+            <section class="card objective-card">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                    </svg>
+                    Objetivo
+                </h2>
+                <p class="objective-text">
+                    Atuar como profissional na área de administração de servidores/sistemas e infraestrutura. Suporte técnico de segundo e terceiro níveis ou coordenação de equipes de suporte a usuários. Mais de 30 anos de experiência na área. Perfil dinâmico e proativo, com disposição para o trabalho em equipe e o aprendizado constante, contribuindo para o alcance das metas.
+                </p>
             </section>
 
-            <section class="education">
-                <h2>Formação</h2>
-                <article>
-                    <p><strong>Análise e Desenvolvimento de Sistemas</strong> - Cruzeiro do Sul (Cursando 2025-2026)</p>
-                    <p><strong>Técnico em Informática Industrial</strong> - ETFSP (1998)</p>
-                </article>
-            </section>
-
-            <section class="courses">
-                <h2>Cursos e Certificações</h2>
-                <ul>
-                    <li><strong>Certificações:</strong> Microsoft Azure Az900, AVEVA PI System Administration, CBSP/THUET.</li>
-                    <li><strong>Tecnologias:</strong> CCNAv7 (Cisco), Cybersecurity, AWS, VMWare vSphere, Python (Ciência de Dados), Linux.</li>
+            <!-- Card 3: Habilidades -->
+            <section class="card skills-card">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path>
+                    </svg>
+                    Habilidades & Competências
+                </h2>
+                <ul class="skills-list">
+                    <li>Proatividade no cumprimento de metas e objetivos</li>
+                    <li>Excelente relacionamento interpessoal com os colegas</li>
+                    <li>Comunicação clara e eficaz com clientes</li>
+                    <li>Pontualidade no cumprimento de prazos</li>
+                    <li>Comprometimento com a padronização dos processos</li>
+                    <li>Cordialidade no atendimento ao cliente</li>
+                    <li>Capacidade para gerir conflitos</li>
+                    <li>Resiliência para enfrentar desafios e obstáculos</li>
                 </ul>
             </section>
+
+            <!-- Card 4: Idiomas -->
+            <section class="card languages-card">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    Idiomas
+                </h2>
+                <div class="languages-list">
+                    <div class="language-item">
+                        <span class="language-name">Português</span>
+                        <span class="language-level">Língua materna</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Inglês</span>
+                        <span class="language-level">Intermediário</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Espanhol</span>
+                        <span class="language-level">Intermediário</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card 5: Experiência Profissional (Full Width) -->
+            <section class="card experience-card full-width">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 3v4M8 3v4"></path>
+                    </svg>
+                    Experiência Profissional
+                </h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Analista Sup Automação Pleno</h3>
+                            <span class="timeline-date">03/2024 - Atual</span>
+                        </div>
+                        <p class="company">SPASSU TECNOLOGIA E SERVIÇOS S/A</p>
+                        <ul class="responsibilities">
+                            <li>Atuação em otimização de processos e na implementação de soluções automatizadas</li>
+                            <li>Auxiliar na resolução de problemas e troubleshooting de sistemas automatizados e rede</li>
+                            <li>Realizar manutenções preventivas e corretivas em equipamentos e softwares</li>
+                            <li>Tratar de alguns problemas simples de PIMS</li>
+                            <li>Atuação na configuração de SO dos diversos tipos de Windows Server e Linux no VMware vSphere</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Analista de Suporte Pleno</h3>
+                            <span class="timeline-date">10/2008 - 01/2018</span>
+                        </div>
+                        <p class="company">COSAN S/A / Raízen S/A</p>
+                        <ul class="responsibilities">
+                            <li>Atendimento a usuários Windows e Sistemas Informatizados</li>
+                            <li>Controle de Backups ArcServe</li>
+                            <li>Administração de Rede Windows Server</li>
+                            <li>Instalações e diagnóstico em cabeamento estruturado com par metálico e cabo óptico</li>
+                            <li>Instalação e Administração de Redes Wireless</li>
+                            <li>Configuração e manutenção de PDA's Symbol Pocket PC Windows Mobile</li>
+                            <li>Monitoramento de links de conexão junto as operadoras Telefônica e Embratel</li>
+                            <li>Adequação de projetos de TI para atender a SOX</li>
+                            <li>Acompanhamento de chamados técnicos através de sistema informatizado</li>
+                            <li>Desenvolvimento de projetos na área de TI e automação</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Técnico Júnior</h3>
+                            <span class="timeline-date">04/2001 - 08/2006</span>
+                        </div>
+                        <p class="company">Itautec Philco S/A</p>
+                        <ul class="responsibilities">
+                            <li>Atuação nas áreas de Automação Bancária, Infraestrutura, Telecomunicações, Informática e Redes de Dados</li>
+                            <li>Manutenção de módulos pagadores (Itautec, Perto, De Larue, NMD, TCR) e roteadores Cisco</li>
+                            <li>Administração de servidores GNU/Linux base Debian</li>
+                            <li>Instrutor da área de treinamento da empresa</li>
+                            <li>Automação bancária envolve implementação e atendimentos aos módulos de pagamento</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Trabalho Voluntário Socioeducativo</h3>
+                            <span class="timeline-date">02/2018 - 05/2022</span>
+                        </div>
+                        <p class="company">Vale do Javari, Amazonas</p>
+                        <ul class="responsibilities">
+                            <li>Trabalho voluntário socioeducativo na região ao vale do Javari</li>
+                            <li>Participação em trabalho inclusivo realizado com surdos e indígenas da cidade Benjamim Constant-AM</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Card 6: Formação Acadêmica -->
+            <section class="card education-card full-width">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6m0 0v6m0-6H2m0 0v6m0-6V4m0 0h20"></path>
+                    </svg>
+                    Formação Acadêmica
+                </h2>
+                <div class="education-timeline">
+                    <article class="education-item">
+                        <div class="education-header">
+                            <h3>Tecnólogo: Análise e Desenvolvimento de Sistemas</h3>
+                            <span class="education-date">02/2025 - 12/2026</span>
+                        </div>
+                        <p class="institution">Universidade Cruzeiro do Sul</p>
+                        <p class="status">Status: Cursando</p>
+                    </article>
+
+                    <article class="education-item">
+                        <div class="education-header">
+                            <h3>Ensino Médio Profissionalizante: Técnico em Informática Industrial</h3>
+                            <span class="education-date">12/1998</span>
+                        </div>
+                        <p class="institution">Escola Técnica Federal de São Paulo</p>
+                    </article>
+
+                    <article class="education-item">
+                        <h3>Cursos Complementares em Infraestrutura</h3>
+                        <p class="institution">Grupo Educacional Itautec Philco S/A</p>
+                        <ul class="course-list">
+                            <li>Redes e Protocolos de Comunicação</li>
+                            <li>Servidores e Tecnologias RAID</li>
+                            <li>Instalação e Configuração de Roteadores Cisco</li>
+                            <li>Implantação de Sistemas de Telefonia</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Card 7: Cursos Complementares -->
+            <section class="card courses-card">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    Cursos Complementares
+                </h2>
+                <ul class="courses-list">
+                    <li>CCNAv7: Introdução às Redes - Cisco Networking Academy</li>
+                    <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
+                    <li>Cybersecurity Essentials - Cisco Networking Academy</li>
+                    <li>Cloud Treinamento - Cloud Computer nas Ferramentas AWS</li>
+                    <li>VMWare vSphere ESXi and vCenter Administration</li>
+                    <li>Cursando Programação - Linguagem Python foco em Ciência de Dados</li>
+                    <li>Curso de Oratória</li>
+                    <li>Conhecimento Avançado em Excel</li>
+                    <li>Conhecimento Intermediário em Linux</li>
+                </ul>
+            </section>
+
+            <!-- Card 8: Certificações -->
+            <section class="card certifications-card">
+                <h2 class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L9.09 9.26H1.44L7.73 14.64L4.82 21.9L12 16.54L19.18 21.9L16.27 14.64L22.56 9.26H14.91L12 2Z"></path>
+                    </svg>
+                    Certificações
+                </h2>
+                <div class="certifications-list">
+                    <div class="cert-group">
+                        <p class="cert-item">Certificação Microsoft Azure - Az900</p>
+                        <p class="cert-item">AVEVA - PI System Administration: Basics</p>
+                    </div>
+                    <div class="cert-group">
+                        <h4>Certificados Segurança Plataforma Petróleo</h4>
+                        <p class="cert-item">CBSP - Curso Básico de Segurança em Plataforma</p>
+                        <p class="cert-item">THUET – Treinamento em Escape de Helicópteros Submersos em Águas Tropicais</p>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <!-- Footer -->
+        <footer class="footer print-hide">
+            <button class="print-btn" onclick="window.print()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                Imprimir Currículo
+            </button>
+        </footer>
     </div>
-    <footer class="print-footer">
-        <button onclick="window.print()">Imprimir Currículo</button>
-    </footer>
+
+    <script>
+        // Initialize Lucide icons if available
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    </script>
 </body>
 </html>
